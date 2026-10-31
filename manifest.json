@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Onde Parei? (Mangás e Animes)",
-  "version": "1.1.1",
-  "description": "Organize animes e mangás, salve seus links e marque manualmente o progresso.",
+  "name": "__MSG_appName__",
+  "version": "1.2.0",
+  "description": "__MSG_appDescription__",
   "permissions": [
     "storage",
     "activeTab",
@@ -11,7 +11,7 @@
     "tabs"
   ],
   "action": {
-    "default_title": "Onde Parei?",
+    "default_title": "__MSG_appName__",
     "default_icon": {
       "16": "assets/icon16.png",
       "48": "assets/icon48.png"
@@ -32,5 +32,6 @@
   "optional_host_permissions": [
     "http://*/*",
     "https://*/*"
-  ]
+  ],
+  "default_locale": "pt_BR"
 }
