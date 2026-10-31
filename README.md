@@ -22,6 +22,10 @@ Extensão para Google Chrome que permite salvar links de obras e acompanhar **ma
 
 Mais informações em [INSTALL.md](INSTALL.md).
 
+## Extração de informações da aba
+
+No formulário **Nova obra**, clique em **Extrair dados da página** para consultar o DOM da aba ativa somente naquele momento. A extensão tenta preencher título, URL, sinopse, capa, tags, tipo e total (quando indicado em dados estruturados), e lista links candidatos de capítulos e episódios. Revise os campos antes de salvar: dados extraídos podem estar incompletos ou incorretos. Os links encontrados (até 200) ficam disponíveis em **Links extraídos**, na biblioteca, após salvar a obra. O progresso continua inteiramente manual. A extração não funciona em páginas internas do Chrome ou sites restritos; não contorna proteções nem anúncios.
+
 ## Como usar
 
 1. Clique no ícone da extensão para abrir o **painel lateral** e escolha **+ Nova obra**.
