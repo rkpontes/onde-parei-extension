@@ -2,6 +2,10 @@
 
 Extensão para Google Chrome que permite salvar links de obras e acompanhar **manualmente** capítulos de mangás lidos e episódios de animes assistidos.
 
+## Idiomas
+
+Português (Brasil), inglês e espanhol. A linguagem é detectada conforme a interface do Chrome e pode ser alterada em **Dados → Idioma**. A preferência é salva localmente; campos inseridos ou extraídos dos sites não são traduzidos. O Manifest usa os catálogos nativos de `_locales/`.
+
 ## Recursos
 
 - Cadastro de obras com título, tipo, URL, tags, notas e status.
