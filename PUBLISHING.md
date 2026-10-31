@@ -5,7 +5,7 @@
 1. Teste a extensão descompactada em `chrome://extensions`.
 2. Valide cadastro, edição, exclusão, progresso, histórico, backup e importação.
 3. Teste a extração em uma página HTTPS e confirme o diálogo de permissões.
-4. Garanta que o botão de apoio tenha uma URL real autorizada antes de exibi-lo ao público.
+4. Configure a constante `SUPPORT_URL` no começo de `popup.js` com a URL real de apoio. Enquanto estiver vazia, o link de doação fica oculto.
 5. Confira a versão do `manifest.json` e verifique o funcionamento dos ícones.
 
 ## 2. Preparar o ZIP
