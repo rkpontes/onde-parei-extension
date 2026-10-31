@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Onde Parei? (Mangás e Animes)",
+  "version": "1.0.0",
+  "description": "Organize animes e mangás, salve seus links e marque manualmente o progresso.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Onde Parei?"
+  }
+}
