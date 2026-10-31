@@ -24,7 +24,7 @@ Mais informações em [INSTALL.md](INSTALL.md).
 
 ## Extração de informações da aba
 
-No formulário **Nova obra**, clique em **Extrair dados da página** para consultar o DOM da aba ativa somente naquele momento. A extensão tenta preencher título, URL, sinopse, capa, tags, tipo e total (quando indicado em dados estruturados), e lista links candidatos de capítulos e episódios. Revise os campos antes de salvar: dados extraídos podem estar incompletos ou incorretos. Os links encontrados (até 200) ficam disponíveis em **Links extraídos**, na biblioteca, após salvar a obra. O progresso continua inteiramente manual. A extração não funciona em páginas internas do Chrome ou sites restritos; não contorna proteções nem anúncios.
+No formulário **Nova obra**, clique em **Extrair dados da página** para consultar o DOM da aba ativa somente naquele momento. Na primeira utilização, o Chrome pode solicitar permissão para ler o site aberto. A extensão tenta preencher título, URL, sinopse, capa, tags, tipo e total (quando indicado em dados estruturados), e lista links candidatos de capítulos e episódios. Revise os campos antes de salvar: dados extraídos podem estar incompletos ou incorretos. Os links encontrados (até 200) ficam disponíveis em **Links extraídos**, na biblioteca, após salvar a obra. O progresso continua inteiramente manual. A extração não funciona em páginas internas do Chrome ou sites restritos; não contorna proteções nem anúncios.
 
 ## Como usar
 
