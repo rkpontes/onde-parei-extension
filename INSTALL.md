@@ -6,6 +6,10 @@
 4. Clique em **Carregar sem compactação** e selecione a pasta que contém `manifest.json`.
 5. Fixe **Onde Parei?** na barra de ferramentas e clique no ícone para abrir o **painel lateral**, que permanece disponível enquanto navega pelo site.
 
+## Extração opcional
+
+Abra a página do anime/mangá, mantenha o painel lateral aberto, escolha **+ Nova obra** e clique em **Extrair dados da página**. Confira os campos preenchidos, ajuste o que for necessário e clique **Salvar obra**. Até 200 links candidatos de episódios/capítulos podem ser salvos e acessados pelo painel de links na biblioteca. Não há marcação automática de progresso.
+
 ## Como usar
 
 - Clique em **+ Nova obra** e informe título, tipo e link da página da obra.
