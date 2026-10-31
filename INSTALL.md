@@ -4,7 +4,7 @@
 2. Abra `chrome://extensions` no Google Chrome.
 3. Ative **Modo do desenvolvedor**.
 4. Clique em **Carregar sem compactação** e selecione a pasta que contém `manifest.json`.
-5. Fixe **Onde Parei?** na barra de ferramentas.
+5. Fixe **Onde Parei?** na barra de ferramentas e clique no ícone para abrir o **painel lateral**, que permanece disponível enquanto navega pelo site.
 
 ## Como usar
 
