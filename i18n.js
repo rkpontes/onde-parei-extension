@@ -16,13 +16,37 @@ function translateSentence(value){
   }
   return out;
 }
+const originalTexts=new WeakMap();
+const originalAttributes=new WeakMap();
 function translateTree(root){
-  if(uiLocale==='pt-BR')return;
   const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
   const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
-  for(const node of nodes){if(node.parentElement?.closest('script,style,textarea,input,[data-user-content]'))continue;
-    const before=node.textContent;const after=translateSentence(before);if(after!==before)node.textContent=after}
-  const elements=[...(root.nodeType===1?[root]:[]),...root.querySelectorAll?.('[placeholder],[aria-label],[title]')||[]];
-  for(const el of elements)for(const attr of ['placeholder','aria-label','title']){if(el.hasAttribute(attr)){const before=el.getAttribute(attr),after=translateSentence(before);if(after!==before)el.setAttribute(attr,after)}}
+  for(const node of nodes){
+    if(node.parentElement?.closest('script,style,textarea,input,[data-user-content]'))continue;
+    if(!originalTexts.has(node))originalTexts.set(node,node.textContent);
+    const base=originalTexts.get(node);
+    const after=translateSentence(base);
+    if(node.textContent!==after)node.textContent=after;
+  }
+  const elements=[...(root.nodeType===1?[root]:[]),...(root.querySelectorAll?.('[placeholder],[aria-label],[title]')||[])];
+  for(const el of elements){
+    if(el.closest('[data-user-content]'))continue;
+    if(!originalAttributes.has(el))originalAttributes.set(el,{});
+    const originals=originalAttributes.get(el);
+    for(const attr of ['placeholder','aria-label','title']){
+      if(!el.hasAttribute(attr))continue;
+      if(!(attr in originals))originals[attr]=el.getAttribute(attr);
+      const translated=translateSentence(originals[attr]);
+      if(el.getAttribute(attr)!==translated)el.setAttribute(attr,translated);
+    }
+  }
 }
 function applyLanguage(){document.documentElement.lang=uiLocale;translateTree(document.body)}
+const translationObserver=new MutationObserver(changes=>{
+  const targets=new Set();
+  for(const change of changes){
+    if(change.type==='childList')for(const node of change.addedNodes)if(node.nodeType===1)targets.add(node);else if(node.nodeType===3&&node.parentElement)targets.add(node.parentElement);
+  }
+  for(const target of targets)translateTree(target);
+});
+function watchTranslations(){translationObserver.observe(document.body,{childList:true,subtree:true})}
