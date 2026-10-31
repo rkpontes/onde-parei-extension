@@ -24,7 +24,7 @@ Mais informações em [INSTALL.md](INSTALL.md).
 
 ## Como usar
 
-1. Abra o popup e escolha **+ Nova obra**.
+1. Clique no ícone da extensão para abrir o **painel lateral** e escolha **+ Nova obra**.
 2. Preencha o título e o link da página principal (ou clique **Usar aba atual**).
 3. Escolha anime ou mangá, defina status e, se souber, total de episódios ou capítulos.
 4. Use **✓ + 1** quando terminar um episódio/capítulo, **− 1** para corrigir ou **Editar** para ajustar diretamente o número.
@@ -40,7 +40,7 @@ Mais informações em [INSTALL.md](INSTALL.md).
 
 ## Privacidade e limitações
 
-A extensão não lê conteúdos de páginas, não monitora vídeo ou leitura, não baixa mídia e não ignora publicidade. A URL/título da aba só é consultada ao clicar no botão correspondente. O armazenamento é local ao perfil do Chrome, portanto **não há sincronização entre aparelhos**. O progresso é uma sequência numérica por obra; futuras versões podem organizar temporadas, volumes e links individuais.
+A extensão não lê conteúdos de páginas, não monitora vídeo ou leitura, não baixa mídia e não ignora publicidade. O painel lateral permanece aberto enquanto você navega, seleciona e copia informações de um site para preencher o formulário manualmente. A URL/título da aba só é consultada ao clicar no botão correspondente. O armazenamento é local ao perfil do Chrome, portanto **não há sincronização entre aparelhos**. O progresso é uma sequência numérica por obra; futuras versões podem organizar temporadas, volumes e links individuais.
 
 ## Desenvolvimento
 
