@@ -5,10 +5,17 @@
   "description": "Organize animes e mangás, salve seus links e marque manualmente o progresso.",
   "permissions": [
     "storage",
-    "activeTab"
+    "activeTab",
+    "sidePanel"
   ],
   "action": {
-    "default_popup": "popup.html",
     "default_title": "Onde Parei?"
-  }
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "minimum_chrome_version": "114"
 }
