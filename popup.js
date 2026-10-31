@@ -83,6 +83,10 @@ async function extractPage(){
   try{
     const tab=await getActiveWebsiteTab();
     if(!tab)throw Error('Não encontrei uma aba de site ativa. Selecione a aba com o mangá ou anime e tente novamente.');
+    const origin=new URL(tab.url).origin+'/*';
+    const granted=await chrome.permissions.contains({origins:[origin]}) ||
+      await chrome.permissions.request({origins:[origin]});
+    if(!granted)throw Error('Autorize o acesso a este site para extrair seus dados.');
     const result=await chrome.scripting.executeScript({target:{tabId:tab.id},func:extractDocument});
     const data=result?.[0]?.result;
     if(!data)throw Error('Não foi possível obter informações desta página.');
