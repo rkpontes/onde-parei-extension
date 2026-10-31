@@ -3,3 +3,5 @@
 html,body{width:100%;min-width:290px;min-height:100%;}body{overflow-x:hidden}main{max-height:none;overflow:visible;padding-bottom:32px}dialog{width:min(390px,calc(100vw - 24px));max-width:calc(100vw - 24px)}header{gap:8px}header .primary{white-space:nowrap}#app{width:100%}
 
 #extraction-result{margin:12px 0 0;color:#9cddb5}.actions{flex-wrap:wrap;justify-content:flex-end}.actions button{flex:1 1 auto}
+
+.extracted-list{margin-top:12px;border-top:1px solid #36465c;padding-top:10px}.extracted-list summary{cursor:pointer;color:#aecbfb}.extracted-items{display:grid;gap:8px;max-height:220px;overflow:auto;padding:10px 0}.extracted-items a{overflow-wrap:anywhere}
